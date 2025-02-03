@@ -1,61 +1,170 @@
 <!doctype html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./output.css" rel="stylesheet">
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-</head>
-<body>
-<header class="w-full">
-  <div class="bg-gradient-to-r from-orange-700 to-orange-800 text-white py-2">
-      <div class="container mx-auto px-4 flex justify-between items-center">
-          <div class="flex items-center space-x-4">
-              <span class="text-sm">Follow us :</span>
-              <div class="flex space-x-3">
-                  <a href="#" class="hover:text-orange-200">
-                      <i class='bx bxl-facebook'></i>
-                  </a>
-                  <a href="#" class="hover:text-orange-200">
-                      <i class='bx bxl-instagram'></i>
-                  </a>
-                  <a href="#" class="hover:text-orange-200">
-                      <i class='bx bxl-linkedin'></i>
-                  </a>
-                  <a href="#" class="hover:text-orange-200">
-                      <i class='bx bxl-youtube'></i>
-                  </a>
-              </div>
-          </div>
-          <div class="flex items-center space-x-6">
-              <div class="flex items-center space-x-2">
-                  <i class='bx bx-phone'></i>
-                  <span class="text-sm">+91 1234 567 890</span>
-              </div>
-              <div class="flex items-center space-x-2">
-                  <i class='bx bx-envelope'></i>
-                  <span class="text-sm">info@skdacademy.ac.in</span>
-              </div>
-          </div>
-      </div>
-  </div>
 
-  <!-- Navigation -->
-  <nav class="bg-white shadow-md py-4">
-      <div class="container mx-auto px-4 flex justify-between items-center">
-          <a href="/" class="flex items-center space-x-2">
-              <img src="./assets/logo.svg" alt="SKD Academy Logo" class="h-12">
-          </a>
-          <div class="hidden md:flex space-x-6">
-              <a href="#" class="text-gray-700 hover:text-blue-600">Home</a>
-              <a href="#" class="text-gray-700 hover:text-blue-600">About</a>
-              <a href="#" class="text-gray-700 hover:text-blue-600">Academics</a>
-              <a href="#" class="text-gray-700 hover:text-blue-600">Admissions</a>
-              <a href="#" class="text-gray-700 hover:text-blue-600">Contact</a>
-          </div>
-      </div>
-  </nav>
-</header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- First, add Swiper's CSS and JS files in your head section -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Add some custom styles -->
+    <style>
+        .swiper-button-next:after,
+        .swiper-button-prev:after {
+            font-size: 24px !important;
+        }
+
+        .swiper-pagination-bullet {
+            background: white !important;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: white !important;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <header class="w-full">
+        <div class="bg-gradient-to-r from-orange-700 to-orange-800 text-white py-2">
+            <div class="container mx-auto px-4 flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                    <span class="text-sm">Follow us :</span>
+                    <div class="flex space-x-3">
+                        <a href="#" class="hover:text-orange-200"><i class='bx bxl-facebook-circle'></i></a>
+                        <a href="#" class="hover:text-orange-200"><i class='bx bxl-facebook-circle'></i></a>
+                        <a href="#" class="hover:text-orange-200"><i class='bx bxl-facebook-circle'></i></a>
+                        <a href="#" class="hover:text-orange-200"><i class='bx bxl-facebook-circle'></i></a>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-6 cursor-pointer">
+                    <div class="flex items-center space-x-2">
+                        <i class='bx bx-phone'></i>
+                        <span class="text-sm">+91 1234 567 890</span>
+                    </div>
+                    <div class="flex items-center space-x-2 cursor-pointer">
+                        <i class='bx bx-envelope'></i>
+                        <span class="text-sm">info@example.ac.in</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+
+        <nav class="bg-white shadow-md py-4">
+            <div class="container mx-auto px-4 flex justify-between items-center">
+                <a href="#" class="flex items-center space-x-2">
+                    <img src="./assets/logo.svg" alt="school logo" class="h-12">
+                </a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#" class="text-gray-700 hover:text-blue-600">Home</a>
+                    <a href="#" class="text-gray-700 hover:text-blue-600">About</a>
+                    <a href="#" class="text-gray-700 hover:text-blue-600">Academics</a>
+                    <a href="#" class="text-gray-700 hover:text-blue-600">Admissions</a>
+                    <a href="#" class="text-gray-700 hover:text-blue-600">Contact</a>
+                </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <!-- Hero Section
+    <main class="w-full min-h-screen bg-yellow-300">
+
+    </main> -->
+
+    <!-- Hero Section with Swiper -->
+    <div class="relative w-full h-[600px]">
+        <div class="swiper hero-swiper">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <img src="./assets/children.jpg" alt="Students in classroom"
+                        class="w-full h-[600px] object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-40">
+                        <div class="container mx-auto px-6 h-full flex items-center">
+                            <div class="text-white">
+                                <h1 class="text-4xl md:text-6xl font-bold mb-4">Excellence in Education</h1>
+                                <p class="text-xl md:text-2xl">Nurturing minds, building futures</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                    <img src="./assets/circle_students.jpg" alt="Science lab" class="w-full h-[600px] object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-40">
+                        <div class="container mx-auto px-6 h-full flex items-center">
+                            <div class="text-white">
+                                <h1 class="text-4xl md:text-6xl font-bold mb-4">Hands-on Learning</h1>
+                                <p class="text-xl md:text-2xl">Discovering through experience</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="swiper-slide">
+                    <img src="./assets/a-z.jpg" alt="Sports activity" class="w-full h-[600px] object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-40">
+                        <div class="container mx-auto px-6 h-full flex items-center">
+                            <div class="text-white">
+                                <h1 class="text-4xl md:text-6xl font-bold mb-4">All-Round Development</h1>
+                                <p class="text-xl md:text-2xl">Beyond academics</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add Navigation -->
+            <div class="swiper-button-next text-white"></div>
+            <div class="swiper-button-prev text-white"></div>
+
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <!-- Initialize Swiper -->
+    <script>
+        const swiper = new Swiper('.hero-swiper', {
+            // Optional parameters
+            loop: true,
+            effect: 'fade', // Use fade effect for smooth transitions
+            speed: 1000,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // Pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
+            // Add some custom styles for fade effect
+            fadeEffect: {
+                crossFade: true
+            }
+        });
+    </script>
 
 </body>
+
 </html>
