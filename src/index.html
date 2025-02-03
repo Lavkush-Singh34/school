@@ -37,6 +37,7 @@
 
 <body>
     <header class="w-full">
+        <!-- Top Bar -->
         <div class="bg-gradient-to-r from-orange-700 to-orange-800 text-white py-2">
             <div class="container mx-auto px-4 flex justify-between items-center">
                 <div class="flex items-center space-x-4">
@@ -48,7 +49,7 @@
                         <a href="#" class="hover:text-orange-200"><i class='bx bxl-youtube'></i></a>
                     </div>
                 </div>
-                <div class="flex items-center space-x-6 cursor-pointer">
+                <div class="hidden md:flex items-center space-x-6 cursor-pointer">
                     <div class="flex items-center space-x-2">
                         <i class='bx bx-phone'></i>
                         <span class="text-sm">+91 1234 567 890</span>
@@ -62,12 +63,14 @@
         </div>
 
         <!-- Navigation -->
-
         <nav class="bg-white shadow-md py-4">
             <div class="container mx-auto px-4 flex justify-between items-center">
+                <!-- Logo -->
                 <a href="#" class="flex items-center space-x-2">
                     <img src="./assets/logo.svg" alt="school logo" class="h-12">
                 </a>
+
+                <!-- Desktop Menu -->
                 <div class="hidden md:flex space-x-6">
                     <a href="#" class="text-gray-700 hover:text-blue-600">Home</a>
                     <a href="#about" class="text-gray-700 hover:text-blue-600">About</a>
@@ -75,9 +78,25 @@
                     <a href="#" class="text-gray-700 hover:text-blue-600">Admissions</a>
                     <a href="#" class="text-gray-700 hover:text-blue-600">Contact</a>
                 </div>
+
+                <!-- Hamburger Icon -->
+                <button onclick="toggleMenu()" class="md:hidden text-gray-700 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Home</a>
+                <a href="#about" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">About</a>
+                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Academics</a>
+                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Admissions</a>
+                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Contact</a>
+            </div>
         </nav>
     </header>
-
     <!-- Hero Section -->
     <!-- Hero Section
     <main class="w-full min-h-screen bg-yellow-300">
@@ -364,6 +383,10 @@
                 enabled: true,
             }
         });
+
+        function toggleMenu() {
+            document.getElementById("mobile-menu").classList.toggle("hidden");
+        }
     </script>
 
 </body>
