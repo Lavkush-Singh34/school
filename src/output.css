@@ -869,6 +869,24 @@
   .h-96 {
     height: calc(var(--spacing) * 96);
   }
+  .h-\[50vh\] {
+    height: 50vh;
+  }
+  .h-\[5vh\] {
+    height: 5vh;
+  }
+  .h-\[25vh\] {
+    height: 25vh;
+  }
+  .h-\[5000px\] {
+    height: 5000px;
+  }
+  .h-\[500px\] {
+    height: 500px;
+  }
+  .h-\[50\] {
+    height: 50;
+  }
   .h-\[250px\] {
     height: 250px;
   }
@@ -1901,6 +1919,12 @@
   }
   .py-6 {
     padding-block: calc(var(--spacing) * 6);
+  }
+  .py-10 {
+    padding-block: calc(var(--spacing) * 10);
+  }
+  .py-100 {
+    padding-block: calc(var(--spacing) * 100);
   }
   .py-12 {
     padding-block: calc(var(--spacing) * 12);
