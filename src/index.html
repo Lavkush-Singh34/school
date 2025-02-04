@@ -87,8 +87,9 @@
                 </button>
             </div>
 
-            <!-- Mobile Menu -->
-            <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <!-- Mobile Menu with Smooth Transition -->
+            <div id="mobile-menu"
+                class="hidden opacity-0 max-h-0 overflow-hidden transition-all duration-3000 ease-in-out md:hidden bg-white border-t border-gray-200">
                 <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Home</a>
                 <a href="#about" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">About</a>
                 <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Academics</a>
@@ -96,8 +97,7 @@
                 <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Contact</a>
             </div>
         </nav>
-    </header>
-    <!-- Hero Section -->
+    </header> <!-- Hero Section -->
     <!-- Hero Section
     <main class="w-full min-h-screen bg-yellow-300">
 
@@ -183,6 +183,100 @@
             </div>
         </div>
     </section>
+
+    <!-- facilities -->
+
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <!-- Heading -->
+            <div class="text-center mb-10">
+                <p class="text-red-500 font-semibold text-lg flex items-center justify-center">
+                    <span class="mr-2">🎓</span> Discover
+                </p>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Facilities Provided By Us</h2>
+            </div>
+    
+            <!-- Facilities Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Item 1 -->
+                <div class="relative group">
+                    <img src="./assets/facility-1.jpeg" alt="Experiential Learning" class="w-full h-48 object-cover rounded-lg">
+                    <div class="absolute inset-0 flex items-center justify-center rounded-lg transition-opacity duration-300 group-hover:bg-opacity-50">
+                        <p class="text-white text-lg font-semibold">EXPERIENTIAL LEARNING</p>
+                    </div>
+                </div>
+    
+                <!-- Item 2 -->
+                <div class="relative group">
+                    <img src="./assets/facility-2.jpeg" alt="AI & Robotics" class="w-full h-48 object-cover rounded-lg">
+                    <div class="absolute inset-0 flex items-center justify-center rounded-lg transition-opacity duration-300 group-hover:bg-opacity-50">
+                        <p class="text-white text-lg font-semibold">AI & ROBOTICS</p>
+                    </div>
+                </div>
+    
+                <!-- Item 3 -->
+                <div class="relative group">
+                    <img src="./assets/facility-3.jpeg" alt="Foundation Classes" class="w-full h-48 object-cover rounded-lg">
+                    <div class="absolute inset-0 flex items-center justify-center rounded-lg transition-opacity duration-300 group-hover:bg-opacity-50">
+                        <p class="text-white text-lg font-semibold">FOUNDATION CLASSES</p>
+                    </div>
+                </div>
+    
+                <!-- Item 4 -->
+                <div class="relative group">
+                    <img src="./assets/facility-4.jpeg" alt="Science Lab" class="w-full h-48 object-cover rounded-lg">
+                    <div class="absolute inset-0 flex items-center justify-center rounded-lg transition-opacity duration-300 group-hover:bg-opacity-50">
+                        <p class="text-white text-lg font-semibold">SCIENCE LAB</p>
+                    </div>
+                </div>
+    
+                <!-- Item 5 -->
+                <div class="relative group">
+                    <img src="./assets/facility-5.jpeg" alt="Library" class="w-full h-48 object-cover rounded-lg">
+                    <div class="absolute inset-0 flex items-center justify-center rounded-lg transition-opacity duration-300 group-hover:bg-opacity-50">
+                        <p class="text-white text-lg font-semibold">LIBRARY</p>
+                    </div>
+                </div>
+    
+                <!-- Item 6 -->
+                <div class="relative group">
+                    <img src="./assets/facility-6.jpeg" alt="Sports" class="w-full h-48 object-cover rounded-lg">
+                    <div class="absolute inset-0 flex items-center justify-center rounded-lg transition-opacity duration-300 group-hover:bg-opacity-50">
+                        <p class="text-white text-lg font-semibold">SPORTS</p>
+                    </div>
+                </div>
+    
+                <!-- Item 7 -->
+                <div class="relative group">
+                    <img src="./assets/facility-7.jpeg" alt="Mobile App" class="w-full h-48 object-cover rounded-lg">
+                    <div class="absolute inset-0 flex items-center justify-center rounded-lg transition-opacity duration-300 group-hover:bg-opacity-50">
+                        <p class="text-white text-lg font-semibold">MOBILE APP</p>
+                    </div>
+                </div>
+    
+                <!-- Item 8 -->
+                <div class="relative group">
+                    <img src="./assets/facility-8.jpeg" alt="Green Space" class="w-full h-48 object-cover rounded-lg">
+                    <div class="absolute inset-0 flex items-center justify-center rounded-lg transition-opacity duration-300 group-hover:bg-opacity-50">
+                        <p class="text-white text-lg font-semibold">GREEN SPACE</p>
+                    </div>
+                </div>
+    
+                <!-- Item 9 -->
+                <div class="relative group">
+                    <img src="./assets/facility-9.jpeg" alt="Transport" class="w-full h-48 object-cover rounded-lg">
+                    <div class="absolute inset-0 flex items-center justify-center rounded-lg transition-opacity duration-300 group-hover:bg-opacity-50">
+                        <p class="text-white text-lg font-semibold">TRANSPORT</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- partners -->
+
+    
 
     <!-- academics -->
 
@@ -353,11 +447,11 @@
             effect: 'slide',
             loop: true,
             speed: 1000,
-            autoplay: false,
-            // autoplay: {
-            //     delay: 5000,
-            //     disableOnInteraction: false,
-            // },
+            // autoplay: false,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
 
             // Navigation arrows
             navigation: {
@@ -385,9 +479,13 @@
         });
 
         function toggleMenu() {
-            document.getElementById("mobile-menu").classList.toggle("hidden");
-        }
-    </script>
+            const menu = document.getElementById("mobile-menu");
+            menu.classList.toggle("hidden");
+            menu.classList.toggle("opacity-0");
+            menu.classList.toggle("opacity-100");
+            menu.classList.toggle("max-h-0");
+            menu.classList.toggle("max-h-64");
+        }    </script>
 
 </body>
 
