@@ -524,6 +524,9 @@
   .\@container {
     container-type: inline-size;
   }
+  .\@container-\[inline-size\] {
+    container-type: inline-size;
+  }
   .pointer-events-auto {
     pointer-events: auto;
   }
@@ -725,6 +728,24 @@
       max-width: 96rem;
     }
   }
+  .container\! {
+    width: 100% !important;
+    @media (width >= 40rem) {
+      max-width: 40rem !important;
+    }
+    @media (width >= 48rem) {
+      max-width: 48rem !important;
+    }
+    @media (width >= 64rem) {
+      max-width: 64rem !important;
+    }
+    @media (width >= 80rem) {
+      max-width: 80rem !important;
+    }
+    @media (width >= 96rem) {
+      max-width: 96rem !important;
+    }
+  }
   .mx-1 {
     margin-inline: calc(var(--spacing) * 1);
   }
@@ -896,26 +917,8 @@
   .h-96 {
     height: calc(var(--spacing) * 96);
   }
-  .h-\[50\] {
-    height: 50;
-  }
-  .h-\[50vh\] {
-    height: 50vh;
-  }
-  .h-\[5vh\] {
-    height: 5vh;
-  }
   .h-\[250px\] {
     height: 250px;
-  }
-  .h-\[25vh\] {
-    height: 25vh;
-  }
-  .h-\[5000px\] {
-    height: 5000px;
-  }
-  .h-\[500px\] {
-    height: 500px;
   }
   .h-\[600px\] {
     height: 600px;
@@ -938,14 +941,14 @@
   .max-h-screen {
     max-height: 100vh;
   }
-  .min-h-\[600px\] {
-    min-height: 600px;
-  }
   .min-h-screen {
     min-height: 100vh;
   }
   .w-1 {
     width: calc(var(--spacing) * 1);
+  }
+  .w-1\/2 {
+    width: calc(1/2 * 100%);
   }
   .w-1\/3 {
     width: calc(1/3 * 100%);
@@ -1698,6 +1701,21 @@
   .border-gray-700 {
     border-color: var(--color-gray-700);
   }
+  .bg-\(--my_variable\) {
+    background-color: var(--my_variable);
+  }
+  .bg-\(color\:--my-color\) {
+    background-color: var(--my-color);
+  }
+  .bg-\[\#0088cc\] {
+    background-color: #0088cc;
+  }
+  .bg-\[color\:var\(--my-color\)\] {
+    background-color: var(--my-color);
+  }
+  .bg-\[var\(--my_variable\)\] {
+    background-color: var(--my_variable);
+  }
   .bg-amber-300 {
     background-color: var(--color-amber-300);
   }
@@ -1712,6 +1730,9 @@
   }
   .bg-blue-600 {
     background-color: var(--color-blue-600);
+  }
+  .bg-blue-700 {
+    background-color: var(--color-blue-700);
   }
   .bg-blue-800 {
     background-color: var(--color-blue-800);
@@ -1740,11 +1761,23 @@
   .bg-green-600 {
     background-color: var(--color-green-600);
   }
+  .bg-green-700 {
+    background-color: var(--color-green-700);
+  }
   .bg-orange-500 {
     background-color: var(--color-orange-500);
   }
   .bg-red-500 {
     background-color: var(--color-red-500);
+  }
+  .bg-red-500\/50 {
+    background-color: color-mix(in oklab, var(--color-red-500) 50%, transparent);
+  }
+  .bg-red-500\/\[50\%\] {
+    background-color: color-mix(in oklab, var(--color-red-500) 50%, transparent);
+  }
+  .bg-red-700 {
+    background-color: var(--color-red-700);
   }
   .bg-white {
     background-color: var(--color-white);
@@ -2138,6 +2171,15 @@
   }
   .whitespace-pre-wrap {
     white-space: pre-wrap;
+  }
+  .\[color\:red\] {
+    color: red;
+  }
+  .\[color\:red\]\/50 {
+    color: color-mix(in oklab, red 50%, transparent);
+  }
+  .\[color\:red\]\/50\! {
+    color: color-mix(in oklab, red 50%, transparent) !important;
   }
   .text-blue-500 {
     color: var(--color-blue-500);
@@ -2550,6 +2592,9 @@
   .forced-color-adjust-none {
     forced-color-adjust: none;
   }
+  .\[keywords\:node-addon-api\] {
+    keywords: node-addon-api;
+  }
   .backface-hidden {
     backface-visibility: hidden;
   }
@@ -2641,13 +2686,6 @@
   .transform-view {
     transform-box: view-box;
   }
-  .hover\:bg-blue-900 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-blue-900);
-      }
-    }
-  }
   .hover\:bg-gray-100 {
     &:hover {
       @media (hover: hover) {
@@ -2662,20 +2700,6 @@
       }
     }
   }
-  .hover\:bg-green-600 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-green-600);
-      }
-    }
-  }
-  .hover\:bg-orange-600 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-orange-600);
-      }
-    }
-  }
   .hover\:text-blue-300 {
     &:hover {
       @media (hover: hover) {
@@ -2687,13 +2711,6 @@
     &:hover {
       @media (hover: hover) {
         color: var(--color-blue-600);
-      }
-    }
-  }
-  .hover\:text-gray-700 {
-    &:hover {
-      @media (hover: hover) {
-        color: var(--color-gray-700);
       }
     }
   }
