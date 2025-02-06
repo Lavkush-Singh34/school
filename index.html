@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./output.css" rel="stylesheet">
+    <link href="./src/output.css" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <!-- First, add Swiper's CSS and JS files in your head section -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./heroSwiper.js" defer></script>
-    <script src="./partner.js" defer></script>
+    <script src="./src/heroSwiper.js" defer></script>
+    <script src="./src/partner.js" defer></script>
     <!-- Add some custom styles -->
     <style>
         html {
@@ -68,7 +68,7 @@
             <div class="container mx-auto px-4 flex justify-between items-center">
                 <!-- Logo -->
                 <a href="#" class="flex items-center space-x-2">
-                    <img src="./assets/logo.svg" alt="school logo" class="h-12">
+                    <img src="./src/assets/logo.svg" alt="school logo" class="h-12">
                 </a>
 
                 <!-- Desktop Menu -->
@@ -110,7 +110,7 @@
             <div class="swiper-wrapper">
                 <!-- Slide 1 -->
                 <div class="swiper-slide relative">
-                    <img src="./assets/children.jpg" alt="Students in classroom" class="w-full h-[600px] object-cover">
+                    <img src="./src/assets/children.jpg" alt="Students in classroom" class="w-full h-[600px] object-cover">
                     <div class="absolute inset-0 bg-black/40 flex items-center">
                         <div class="container mx-auto px-6">
                             <div class="text-white">
@@ -123,7 +123,7 @@
 
                 <!-- Slide 2 -->
                 <div class="swiper-slide relative">
-                    <img src="./assets/circle_students.jpg" alt="Science lab" class="w-full h-[600px] object-cover">
+                    <img src="./src/assets/circle_students.jpg" alt="Science lab" class="w-full h-[600px] object-cover">
                     <div class="absolute inset-0 bg-black/40 flex items-center">
                         <div class="container mx-auto px-6">
                             <div class="text-white">
@@ -136,7 +136,7 @@
 
                 <!-- Slide 3 -->
                 <div class="swiper-slide relative">
-                    <img src="./assets/a-z.jpg" alt="Sports activity" class="w-full h-[600px] object-cover">
+                    <img src="./src/assets/a-z.jpg" alt="Sports activity" class="w-full h-[600px] object-cover">
                     <div class="absolute inset-0 bg-black/40 flex items-center">
                         <div class="container mx-auto px-6">
                             <div class="text-white">
@@ -201,7 +201,7 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <!-- Item 1 -->
                 <div class="relative group">
-                    <img src="./assets/facility-1.jpeg" alt="Experiential Learning"
+                    <img src="./src/assets/facility-1.jpeg" alt="Experiential Learning"
                         class="w-full h-48 object-cover rounded-lg">
                     <div
                         class="absolute inset-0 flex items-center justify-center rounded-lg transition-opacity duration-300 group-hover:bg-opacity-50">
@@ -211,7 +211,7 @@
 
                 <!-- Item 2 -->
                 <div class="relative group">
-                    <img src="./assets/facility-2.jpeg" alt="AI & Robotics" class="w-full h-48 object-cover rounded-lg">
+                    <img src="./src/assets/facility-2.jpeg" alt="AI & Robotics" class="w-full h-48 object-cover rounded-lg">
                     <div
                         class="absolute inset-0 flex items-center justify-center rounded-lg transition-opacity duration-300 group-hover:bg-opacity-50">
                         <p class="text-white text-lg font-semibold">AI & ROBOTICS</p>
@@ -220,7 +220,7 @@
 
                 <!-- Item 3 -->
                 <div class="relative group">
-                    <img src="./assets/facility-3.jpeg" alt="Foundation Classes"
+                    <img src="./src/assets/facility-3.jpeg" alt="Foundation Classes"
                         class="w-full h-48 object-cover rounded-lg">
                     <div
                         class="absolute inset-0 flex items-center justify-center rounded-lg transition-opacity duration-300 group-hover:bg-opacity-50">
@@ -230,7 +230,7 @@
 
                 <!-- Item 4 -->
                 <div class="relative group">
-                    <img src="./assets/facility-4.jpeg" alt="Science Lab" class="w-full h-48 object-cover rounded-lg">
+                    <img src="./src/assets/facility-4.jpeg" alt="Science Lab" class="w-full h-48 object-cover rounded-lg">
                     <div
                         class="absolute inset-0 flex items-center justify-center rounded-lg transition-opacity duration-300 group-hover:bg-opacity-50">
                         <p class="text-white text-lg font-semibold">SCIENCE LAB</p>
@@ -239,7 +239,7 @@
 
                 <!-- Item 5 -->
                 <div class="relative group">
-                    <img src="./assets/facility-5.jpeg" alt="Library" class="w-full h-48 object-cover rounded-lg">
+                    <img src="./src/assets/facility-5.jpeg" alt="Library" class="w-full h-48 object-cover rounded-lg">
                     <div
                         class="absolute inset-0 flex items-center justify-center rounded-lg transition-opacity duration-300 group-hover:bg-opacity-50">
                         <p class="text-white text-lg font-semibold">LIBRARY</p>
@@ -248,7 +248,7 @@
 
                 <!-- Item 6 -->
                 <div class="relative group">
-                    <img src="./assets/facility-6.jpeg" alt="Sports" class="w-full h-48 object-cover rounded-lg">
+                    <img src="./src/assets/facility-6.jpeg" alt="Sports" class="w-full h-48 object-cover rounded-lg">
                     <div
                         class="absolute inset-0 flex items-center justify-center rounded-lg transition-opacity duration-300 group-hover:bg-opacity-50">
                         <p class="text-white text-lg font-semibold">SPORTS</p>
@@ -257,7 +257,7 @@
 
                 <!-- Item 7 -->
                 <div class="relative group">
-                    <img src="./assets/facility-7.jpeg" alt="Mobile App" class="w-full h-48 object-cover rounded-lg">
+                    <img src="./src/assets/facility-7.jpeg" alt="Mobile App" class="w-full h-48 object-cover rounded-lg">
                     <div
                         class="absolute inset-0 flex items-center justify-center rounded-lg transition-opacity duration-300 group-hover:bg-opacity-50">
                         <p class="text-white text-lg font-semibold">MOBILE APP</p>
@@ -266,7 +266,7 @@
 
                 <!-- Item 8 -->
                 <div class="relative group">
-                    <img src="./assets/facility-8.jpeg" alt="Green Space" class="w-full h-48 object-cover rounded-lg">
+                    <img src="./src/assets/facility-8.jpeg" alt="Green Space" class="w-full h-48 object-cover rounded-lg">
                     <div
                         class="absolute inset-0 flex items-center justify-center rounded-lg transition-opacity duration-300 group-hover:bg-opacity-50">
                         <p class="text-white text-lg font-semibold">GREEN SPACE</p>
@@ -275,7 +275,7 @@
 
                 <!-- Item 9 -->
                 <div class="relative group">
-                    <img src="./assets/facility-9.jpeg" alt="Transport" class="w-full h-48 object-cover rounded-lg">
+                    <img src="./src/assets/facility-9.jpeg" alt="Transport" class="w-full h-48 object-cover rounded-lg">
                     <div
                         class="absolute inset-0 flex items-center justify-center rounded-lg transition-opacity duration-300 group-hover:bg-opacity-50">
                         <p class="text-white text-lg font-semibold">TRANSPORT</p>
@@ -295,35 +295,35 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide flex justify-center">
                         <!-- <img src="https://placehold.co/400x300" alt="EduVirtua" class="h-16"> -->
-                        <img src="./assets/partners-1.png" alt="EduVirtua" class="h-16">
+                        <img src="./src/assets/partners-1.png" alt="EduVirtua" class="h-16">
                     </div>
                     <div class="swiper-slide flex justify-center">
                         <!-- <img src="https://placehold.co/400x300" alt="Edufy Hub" class="h-16"> -->
-                        <img src="./assets/partners-2.png" alt="Edufy Hub" class="h-16">
+                        <img src="./src/assets/partners-2.png" alt="Edufy Hub" class="h-16">
                     </div>
                     <div class="swiper-slide flex justify-center">
                         <!-- <img src="https://placehold.co/400x300" alt="Skill India" class="h-16"> -->
-                        <img src="./assets/partners-3.png" alt="Skill India" class="h-16">
+                        <img src="./src/assets/partners-3.png" alt="Skill India" class="h-16">
                     </div>
                     <div class="swiper-slide flex justify-center">
                         <!-- <img src="https://placehold.co/400x300" alt="Digital India" class="h-16"> -->
-                        <img src="./assets/partners-1.png" alt="Digital India" class="h-16">
+                        <img src="./src/assets/partners-1.png" alt="Digital India" class="h-16">
                     </div>
                     <div class="swiper-slide flex justify-center">
                         <!-- <img src="https://placehold.co/400x300" alt="EduVirtua" class="h-16"> -->
-                        <img src="./assets/partners-2.png" alt="EduVirtua" class="h-16">
+                        <img src="./src/assets/partners-2.png" alt="EduVirtua" class="h-16">
                     </div>
                     <div class="swiper-slide flex justify-center">
                         <!-- <img src="https://placehold.co/400x300" alt="Edufy Hub" class="h-16"> -->
-                        <img src="./assets/partners-3.png" alt="Edufy Hub" class="h-16">
+                        <img src="./src/assets/partners-3.png" alt="Edufy Hub" class="h-16">
                     </div>
                     <div class="swiper-slide flex justify-center">
                         <!-- <img src="https://placehold.co/400x300" alt="Skill India" class="h-16"> -->
-                        <img src="./assets/partners-1.png" alt="Skill India" class="h-16">
+                        <img src="./src/assets/partners-1.png" alt="Skill India" class="h-16">
                     </div>
                     <div class="swiper-slide flex justify-center">
                         <!-- <img src="https://placehold.co/400x300" alt="Digital India" class="h-16"> -->
-                        <img src="./assets/partners-2.png" alt="Digital India" class="h-16">
+                        <img src="./src/assets/partners-2.png" alt="Digital India" class="h-16">
                     </div>
                 </div>
             </div>
@@ -387,7 +387,7 @@
             <!-- Student image -->
             <div class="w-1/3">
                 <!-- <img src="https://placehold.co/400x600" alt="Student with backpack" class="object-cover" /> -->
-                <img src="./assets/addmision.png" alt="Student with backpack" class="object-cover" />
+                <img src="./src/assets/addmision.png" alt="Student with backpack" class="object-cover" />
             </div>
 
             <!-- Text content -->
